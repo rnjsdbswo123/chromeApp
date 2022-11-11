@@ -23,5 +23,26 @@ const quotes =[
         quote : "직업에서 행복을 찾아라. 아니면 행복이 무엇인지 절대 모를 것이다",
         author : "엘버트 허버드"
     },
-    
+    {
+        quote : "배고프다",
+        author : "권윤재"
+    },
+    {
+        quote : "월급 받고 싶다",
+        author : "권"
+    },
+    {
+        quote : "어제가 월급 날",
+        author : "권윤재"
+    },
+    {
+        quote : "오늘은 빼빼로데이",
+        author : "권윤재"
+    },
 ]
+const quote = document.querySelector("#quote span:first-child")
+const author = document.querySelector("#quote span:last-child")
+
+const todayQuote = quotes[Math.floor(Math.random()*quotes.length)]
+quote.innerText = todayQuote.quote
+author.innerText = todayQuote.author
