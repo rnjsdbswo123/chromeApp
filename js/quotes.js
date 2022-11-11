@@ -37,7 +37,7 @@ const quotes =[
     },
     {
         quote : "오늘은 빼빼로데이",
-        author : "권윤재"
+        author : "권윤재d"
     },
 ]
 const quote = document.querySelector("#quote span:first-child")
