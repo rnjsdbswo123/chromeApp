@@ -7,6 +7,8 @@ const TODOS_KEY ="todos"
 function deleteToDo(event){
     const li = (event.target.parentElement);
     li.remove()
+    toDos = toDos.filter(toDo =>toDo.id !== parseInt(li.id));
+    saveToDos()
 }
 
 function saveToDos(){
@@ -47,3 +49,4 @@ if(savedToDos !== null){
     toDos = parsedToDos;
     parsedToDos.forEach(paintToDo);
 }
+
