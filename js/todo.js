@@ -6,6 +6,7 @@ let toDos = [];
 const TODOS_KEY ="todos"
 function deleteToDo(event){
     const li = (event.target.parentElement);
+    // 카페24 이 부분으로 복습..
     li.remove()
     toDos = toDos.filter(toDo =>toDo.id !== parseInt(li.id));
     saveToDos()
